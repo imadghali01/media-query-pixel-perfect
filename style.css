@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+}
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 28px 636px 486px 451px ;
+    padding: 28px 16px;
+    text-decoration: none;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    grid-row: 1;
+}
+header .logo{
+    height: auto;
+    width: 44.98px;
+    font-weight: 900;
+}
+header li{
+    text-decoration: none;
+    display: none;
+    
+}
+.menu{
+    position: relative;
+    width: 40px;
+    height: 17px;
+    background-color: black; /* La couleur du carré */
+}
+  
+.menu::before,
+.menu::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 4.3px; /* Épaisseur des lignes */
+  background-color: white; /* Couleur des lignes */
+}
+
+.menu::before {
+  top: 17%; /* Position de la première ligne */
+}
+
+.menu::after {
+  top: 59%; /* Position de la deuxième ligne */
+}
+main{
+  display: flex;
+  flex-direction: column;
+  margin-top: 35px;
+  padding-bottom: 40px;
+}
+.mainCard{
+    grid-row: 2;
+}
+.mainImg img{
+    height: 300px;
+    width: 100%;
+    object-fit:cover;
+    margin-bottom: 30px;
+}
+.mainTitle{
+    font-size: 22px;
+    font-weight:800;
+    line-height: 2em;
+    margin-bottom: 20px;
+    color: #00001A;
+
+}
+.mainContent p{
+    font-size: 1.em;
+    font-weight: 300;
+    line-height: 1.7em;
+    margin-bottom: 30px;
+}
+.mainCard a{
+    background-color: #F15D51;
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding: 10px 25px;
+    color: white;
+}
+.mainSide{
+    margin-top: 60px;
+    grid-row: 3;
+    background: #00001A;
+    padding: 25px 20px;
+}
+hr{
+    margin-top: 30px;
+}
+.mainSide h2{
+    color: #E9AA52;
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+.mainSide h3{
+    color: white;
+    margin-top: 25px;
+}
+.mainSide p{
+    margin-top: 13px;
+    color: #C5C6CE;
+    font-size: 0.8em;
+    letter-spacing: 0.5px;
+    line-height: 1.8em;
+}
+section{
+    grid-row: 4;
+    margin-top: 175px;
+}
+section img{
+    height: 160px;
+    width: 120px;
+    object-fit: cover;
+}
+.sectionCards{
+    display: flex;
+    margin-bottom: 30px;
+}
+.cardContent{
+    font-size: 0.9rem;
+    padding-left: 20px;
+    line-height: 40px;
+}
+.cardContent h2{
+    color: #C5C6CE;
+    font-size: 2rem;
+
+}
+
