@@ -17,7 +17,6 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
     grid-row: 1;
 }
 header .logo{
@@ -26,23 +25,25 @@ header .logo{
     font-weight: 900;
 }
 .menu ul{
-    width: 60px;
-    height: 110px;
-    background-color: #00001A;
     display: none;
     text-decoration: none;
     list-style-type: none;
 }
 .menu li{
-    margin-left: 70px;
+    margin-top: 10px;
+    margin-right: 50px;
     padding: 5px;
+    background-color: #00001A;
+    height: 30px;
+    width: 90px;
+    border-radius: 5px;
+    z-index: 1;
 }
 .menu a{
-    z-index: 0;
     color: white;
-    background-color: #00001A;
-    padding: 5px 20px;
-    gap: 10px;
+}
+.menu a:hover{
+    color: lightblue;
 }
 .hamburger{
     width: 40px;
@@ -160,7 +161,7 @@ hr{
 }
 section{
     grid-row: 4;
-    margin-top: 175px;
+    margin-top: 275px;
 }
 section img{
     height: 160px;
@@ -200,12 +201,13 @@ section img{
         justify-content: space-between;
     }
     .menu ul{
-        margin-left: -460px;
         display: flex;
         flex-direction: row;
     }
     .menu li{
         padding-left: 35px;
+        background-color: white;
+        z-index: 0;
     }
     .menu a{
         color: #00001A;

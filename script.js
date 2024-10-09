@@ -7,12 +7,18 @@ hamburgerOpen.forEach(hamburger => {
 })
 
 function showMenu() {
+    const contain = document.querySelector('container');
     const menu = document.querySelector('ul');
-    if (menu.style.display === 'none' || menu.style.display === '') {
+    if ((menu.style.display === 'none' || menu.style.display === '')) {
         menu.style.display = 'flex';
         menu.style.flexDirection = 'column';
 
-      } else {
+    } 
+    else{
         menu.style.display = 'none';
-      }
+    }
 }
+/*else if(contain.style.width > '1440px') {
+        menu.style.display = 'flex';
+        menu.style.flexDirection = 'row';
+    }*/
