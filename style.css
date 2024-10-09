@@ -24,8 +24,10 @@ header .logo{
     width: 44.98px;
     font-weight: 900;
 }
-.menu ul{
+.menu{
     display: none;
+}
+.menu ul{
     text-decoration: none;
     list-style-type: none;
 }
@@ -44,6 +46,11 @@ header .logo{
 }
 .menu a:hover{
     color: lightblue;
+}
+.menu.active{
+    display: flex;
+    flex-direction: column;
+
 }
 .hamburger{
     width: 40px;
@@ -199,6 +206,10 @@ section img{
         grid-row: 1;
         display: flex;
         justify-content: space-between;
+    }
+    .menu{
+        display: flex;
+        flex-direction: row;
     }
     .menu ul{
         display: flex;

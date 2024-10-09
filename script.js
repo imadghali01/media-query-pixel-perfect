@@ -1,12 +1,11 @@
-const hamburgerOpen = document.querySelectorAll('.hamburger');
-hamburgerOpen.forEach(hamburger => {
-
-    hamburger.addEventListener('click', e => {
-        e.target.classList.toggle('active');
-    })
+const hamburgerOpen = document.querySelector('.hamburger');
+const menu = document.querySelector('.menu');
+hamburgerOpen.addEventListener('click', e => {
+    menu.classList.toggle('active');
 })
 
-function showMenu() {
+
+/*function showMenu() {
     const contain = document.querySelector('container');
     const menu = document.querySelector('ul');
     if ((menu.style.display === 'none' || menu.style.display === '')) {
@@ -17,7 +16,7 @@ function showMenu() {
     else{
         menu.style.display = 'none';
     }
-}
+}*/
 /*else if(contain.style.width > '1440px') {
         menu.style.display = 'flex';
         menu.style.flexDirection = 'row';
